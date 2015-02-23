@@ -1,0 +1,18 @@
+<h1>School Sign In</h1>
+<%= form_for(@user, url: login_path do |f| %>
+
+<div class="form-group">
+  <%= f.label :user_name %>
+  <%= f.text_field :user_name, :class => 'form-control' %>
+</div>
+
+<div class="form-group">
+  <%= f.label :password %>
+  <%= f.password_field :password, :class => 'form-control' %>
+</div>
+
+<div class="form-group">
+    <%= f.submit 'Login', class: "btn btn-primary" %>
+</div>
+
+<% end %>
